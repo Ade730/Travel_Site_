@@ -1,0 +1,86 @@
+body {
+  font-size: 16px;
+}
+@media (min-width:500px) {
+  body{
+    font-size:18px;
+  }
+}
+@media (min-width:768px) {
+  body {
+      font-size: 18px;
+  }
+}
+@media (min-width:1024px) {
+  body {
+      font-size: 19px;
+  }
+}
+@media (min-width:1280px) {
+  body {
+      font-size: 20px;
+  }
+}
+
+
+.nav-item::selection{
+  color: black;
+}
+
+
+.btn-price{
+   transition: 0.5s;
+   background-color: rgb(194, 194, 194);
+   border-radius: 0%;
+   padding: 5px 15px;
+}
+
+.btn-price:hover{
+  background-color: rgb(219, 205, 3);
+  color:white;
+}
+
+
+.line{
+  width: 280px;
+  height: 1.3px;
+  background-color: rgb(255, 123, 0);
+}
+
+
+.contain {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.item {
+  /* align-items: center; */
+  background-color: whitesmoke;
+  /* color: white; */
+  /* display: flex; */
+  /* height: 300px; */
+  /* justify-content: center; */
+}
+
+.email{
+  border: 2px solid rgba(141, 140, 140, 0.603);
+  color: white;
+}
+
+.icon-email{
+  background-color: rgb(219, 205, 3);
+  padding-left:5px ;
+  padding-right:5px;
+}
+
+.img-up{
+  position: relative;
+}
+
+.img-down{
+  position: absolute;
+  bottom: 40%;
+  left: 43%;
+  font-weight: bold;
+}

@@ -1,0 +1,774 @@
+<html>
+
+<head>
+  <title>Travel site</title>
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg  bg-black navbar sticky-top ">
+    <div class="container">
+      <a class="navbar-brand" href="index.HTML">
+        <img src="images/logo.png" alt="logo" width="200px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#hero" style="font-weight: bold">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" style="font-weight: bold">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" style="font-weight: bold">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" style="font-weight: bold">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="blog.html" style="font-weight: bold">Insurance</a>
+          </li>
+          <li class="nav-item dropdown bg-warning">
+            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+              <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" style="
+        background: linear-gradient(rgba(0,0,0,0.507), rgba(0,0,0.438)),url(images/hero-bg.jpg);
+        background-size: cover;
+        height: 100%;
+      ">
+    <div class="container " id="body-section">
+      <div class="row ">
+        <div class="col-md-12  col-lg-7 mt-5">
+          <div class="mt-5 text-white">
+            <h6 class="h6">Have The Time Of Your Life With</h6>
+            <h3 class="display-4 h3" style="font-size: 76px;font-weight: bold;">MAGICAL TRAVEL</h3>
+            <h5 class="h5">
+              If you are looking at blank cassettes on the web, you may be
+              very confused at the difference in price. You may see some for
+              as low as $.17 each.
+            </h5>
+            <div class="mt-4">
+              <a class="btn btn-warning ps-4 pe-4 text-white" style="border-radius: 0%">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-5 mt-2 ">
+          <div class="" style="box-sizing: border-box">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" data-bs-toggle="tab" href="#Flights" style="
+                      background-color: rgba(255, 255, 255, 0.329);
+                      border-radius: 0%;
+                    ">FLIGHTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-bs-toggle="tab" href="#menu1" style="
+                      background-color: rgba(255, 255, 255, 0.329);
+                      border-radius: 0%;
+                    ">HOTELS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-bs-toggle="tab" href="#menu2" style="
+                      background-color: rgba(255, 255, 255, 0.329);
+                      border-radius: 0%;
+                    ">HOLIDAYS</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content bg-white p-4 " style="width: 420px;">
+              <div class="tab-pane container active" id="Flights">
+                <div class=" ">
+                  <form class="">
+                    <div class="form-group ">
+                      <label for="from"></label>
+                      <input type="text" class="form-control" name="from" id="from" placeholder="From"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="TO"></label>
+                      <input type="text" class="form-control" name="TO" id="TO" placeholder="TO"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="start"></label>
+                      <input type="date" class="form-control" name="start" id="start" placeholder="Start"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="return"></label>
+                      <input type="date" class="form-control" name="Return" id="Return" placeholder="Return"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="Adults"></label>
+                      <input type="number" class="form-control" name="Adults" id="Adults" placeholder="Adults"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a class="btn btn-warning text-white" style="
+                            border-radius: 0%;
+                            padding: 10px 10px 10px 10px;
+                          ">SEARCH FLIGHTS</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="menu1">
+                <div class=" ">
+                  <form class="">
+                    <div class="form-group ">
+                      <label for="from"></label>
+                      <input type="text" class="form-control" name="from" id="from" placeholder="From"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="TO"></label>
+                      <input type="text" class="form-control" name="TO" id="TO" placeholder="TO"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="start"></label>
+                      <input type="date" class="form-control" name="start" id="start" placeholder="Start"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="return"></label>
+                      <input type="date" class="form-control" name="Return" id="Return" placeholder="Return"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="Adults"></label>
+                      <input type="number" class="form-control" name="Adults" id="Adults" placeholder="Adults"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a class="btn btn-warning text-white" style="
+                            border-radius: 0%;
+                            padding: 10px 10px 10px 10px;
+                          ">SEARCH HOTELS</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="menu2">
+                <div class=" ">
+                  <form class="">
+                    <div class="form-group ">
+                      <label for="from"></label>
+                      <input type="text" class="form-control" name="from" id="from" placeholder="From"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="TO"></label>
+                      <input type="text" class="form-control" name="TO" id="TO" placeholder="TO"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="start"></label>
+                      <input type="date" class="form-control" name="start" id="start" placeholder="Start"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="return"></label>
+                      <input type="date" class="form-control" name="Return" id="Return" placeholder="Return"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="Adults"></label>
+                      <input type="number" class="form-control" name="Adults" id="Adults" placeholder="Adults"
+                        style="border-radius: 0%;" />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a class="btn btn-warning text-white" style="
+                            border-radius: 0%;
+                            padding: 10px 10px 10px 10px;
+                          ">SEARCH HOLIDAYS</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="popular destination" class="mt-5">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-12 mt-5">
+          <div class="text-center">
+            <div class="h2">Popular Destination</div>
+            <p class="text-secondary">We all live in an age that belongs to the young at heart. Life that is becoming
+              extremely fast, day.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center g-4">
+        <div class="col-md-12 col-lg-4">
+          <div class="img-up">
+            <img src="images/popular1.jpg" class="img-fluid" alt="Mountain River picture">
+            <div class="img-down">
+             <p class="text-white">Paraguay</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="img-up">
+            <img src="images/popular2.jpg" class="img-fluid" alt="Dream City picture">
+            <div class="img-down">
+              <p class="text-white">Paris</p>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="img-up">
+            <img src="images/popular3.jpg" class="img-fluid" alt="Cloud Mountain picture">
+            <div class="img-down">
+              <p class="text-white">Sri Lanka</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="prices" class="mt-5" style="background:url(images/world.png);background-size: cover;">
+    <div class="container p-5">
+      <div class="row ">
+        <div class="col-12 mt-5">
+          <div class="text-center">
+            <div class="h2">We Provide Affordable Prices </div>
+            <p class="text-secondary">Well educated, intellectual people, especially scientists at all times demonstrate
+              considerably.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-5" style="gap: px;">
+        <div class="col-lg-4 col-md-12 " style="box-sizing: border-box;background-color: white;">
+          <div class="p-4">
+            <div class="h4 text-center">Cheap Packages</div>
+            <div class="line text-center"></div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">LAGOS</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">ABUJA</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted  btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">NEW YORK</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price  " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">MALADIVES</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">SOUTH AFRICA</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">NEPAL</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price  " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4  col-md-12" style="box-sizing: border-box;background-color: white;">
+          <div class="p-4">
+            <div class="h4 text-center">Luxury Packages</div>
+            <div class="line"></div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">LAGOS</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">ABUJA</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted  btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">NEW YORK</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price  " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">MALADIVES</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">SOUTH AFRICA</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">NEPAL</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price  " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4  col-md-12 " style="box-sizing: border-box;background-color: white;">
+          <div class="p-4">
+            <div class="h4 text-center">Camping Packages</div>
+            <div class="line"></div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">LAGOS</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">ABUJA</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted  btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">NEW YORK</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price  " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">MALADIVES</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">SOUTH AFRICA</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <div class="6  me-5">NEPAL</div>
+              <div class="ms-auto" style="box-sizing: border-box;background-color: white;">
+                <a class="btn btn-muted btn-price  " style="font-weight: bold;">$1400</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="issues" class="mt-5">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 mt-5 text-center">
+          <div>
+            <div class="h2">
+              Other Issues We Can Help You With
+            </div>
+            <p class="text-secondary  ">We all live in an age that belongs to the young at heart. Life that is.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-4 mt-4">
+        <div class="col-lg-3 col-md-12">
+          <div class="card">
+            <img src="images/o1.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <a class="h5 text-decoration-none mt-4" href="#">Cruise Booking</a>
+              <p class="mt-2">I was always somebody who felt quite sorry for myself, what I had not got compared.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card">
+            <img src="images/o2.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <a class="h5 text-decoration-none mt-4" href="#">Cruise Booking</a>
+              <p class="mt-2">I was always somebody who felt quite sorry for myself, what I had not got compared.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card">
+            <img src="images/o3.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <a class="h5 text-decoration-none mt-4" href="#">To Do List</a>
+              <p class="mt-2">The following article covers a topic that has recently moved to center stage–at least it
+                seems.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card">
+            <img src="images/o4.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <a class="h5 text-decoration-none mt-4" href="#">Food Features</a>
+              <p class="mt-2">There are many kinds of narratives and organizing principles. Science is driven by
+                evidence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="customer-reviews" class="mt-5" style="background: rgba(247, 243, 243, 0.856);height:%;">
+    <div class="container m p-1">
+      <div class="row mt-5">
+        <div class="col-12 text-center mt-5">
+          <div>
+            <h4>Testimonial From Our Clients</h4>
+            <p class="text-secondary">The French Revolution constituted for the conscience of the dominant aristocratic
+              class a fall from</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="contain">
+          <div id="owl-carousel" class="owl-carousel owl-theme">
+            <div class="item p-3 bg-white">
+              <div class="d-flex  align-items-center ">
+                <img src="images/customer review.webp" alt="" class="img-fluid me-4"
+                  style="width: 70px;border-radius: 900px;">
+                <div class="">
+                  <p>
+                    A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is
+                    to stop smoking cigarettes. However.
+                  </p>
+                  <div class="h5">Harrison Wells</div>
+                  <div>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning "></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item  p-3 bg-white">
+              <div class="d-flex  align-items-center ">
+                <img src="images/customer review.webp" alt="" class="img-fluid me-4"
+                  style="width: 70px;border-radius: 900px;">
+                <div class="">
+                  <p>
+                    A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is
+                    to stop smoking cigarettes. However.
+                  </p>
+                  <div class="h5">Harrison Wells</div>
+                  <div>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning "></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item p-3 bg-white">
+              <div class="d-flex  align-items-center ">
+                <img src="images/customer review.webp" alt="" class="img-fluid me-4"
+                  style="width: 70px;border-radius: 900px;">
+                <div class="">
+                  <p>
+                    A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is
+                    to stop smoking cigarettes. However.
+                  </p>
+                  <div class="h5">Harrison Wells</div>
+                  <div>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning "></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item p-3 bg-white">
+              <div class="d-flex  align-items-center ">
+                <img src="images/customer review.webp" alt="" class="img-fluid me-4"
+                  style="width: 70px;border-radius: 900px;">
+                <div class="">
+                  <p>
+                    A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is
+                    to stop smoking cigarettes. However.
+                  </p>
+                  <div class="h5">Harrison Wells</div>
+                  <div>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning "></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-warning"></i>
+                    <i class="ri-star-fill text-secondary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item" 7 5 </div>
+              <div class="item p-3 bg-white">
+                <div class="d-flex  align-items-center ">
+                  <img src="images/customer review.webp" alt="" class="img-fluid me-4"
+                    style="width: 70px;border-radius: 900px;">
+                  <div class="">
+                    <p>
+                      A purpose is the eternal condition for success. Every former smoker can tell you just how hard it
+                      is
+                      to stop smoking cigarettes. However.
+                    </p>
+                    <div class="h5">Harrison Wells</div>
+                    <div>
+                      <i class="ri-star-fill text-warning"></i>
+                      <i class="ri-star-fill text-warning "></i>
+                      <i class="ri-star-fill text-warning"></i>
+                      <i class="ri-star-fill text-warning"></i>
+                      <i class="ri-star-fill text-secondary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="about" class="mt">
+    <div class="container-fluid">
+      <div class="row gy-5">
+        <div class="col-lg-6 mt-5 ">
+          <div class="mt-5">
+            <div class="h4 col-lg-6">
+              Did not Find Your Package?
+              Feel Free To Ask Us.
+              We'll make it for you
+            </div>
+            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
+              especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond
+              reproach. inappropriate behavior is often laughed.</p>
+            <div class="mt-4">
+              <a class="btn btn-dark" style="border-radius: 0%;">Request Custom Price</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/about-img.jpg" alt="about-image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12  mt-5 text-center">
+          <div>
+            <div class="h4">Lastest From Our Blog</div>
+            <p class="text-secondary ">With the exception of Nietzsche, no other madman has contributed so much to human
+              sanity as has.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 ">
+          <div class="card " style="border: none;">
+            <img src="images/blog-1.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <div class="d-flex align-items-center">
+                <a class="btn btn-muted me-2" style="border: 1px black solid;">Travel</a>
+                <a class="btn btn-muted" style="border: 1px black solid;">Lifestyle</a>
+              </div>
+              <div class="mt-3">
+                <a class="" style="text-decoration: none;">
+                  <h5 class="text-black">Creative Outdoors Ads</h5>
+                </a>
+              </div>
+              <div>
+                <p>
+                  Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 ">
+          <div class="card " style="border: none;">
+            <img src="images/blog-1.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <div class="d-flex align-items-center">
+                <a class="btn btn-muted me-2" style="border: 1px black solid;">Travel</a>
+                <a class="btn btn-muted" style="border: 1px black solid;">Lifestyle</a>
+              </div>
+              <div class="mt-3">
+                <a class="" style="text-decoration: none;">
+                  <h5 class="text-black">Creative Outdoors Ads</h5>
+                </a>
+              </div>
+              <div>
+                <p>
+                  Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 ">
+          <div class="card " style="border: none;">
+            <img src="images/blog-1.jpg" alt="food item" class="card-img-top">
+            <div class="card-body ">
+              <div class="d-flex align-items-center">
+                <a class="btn btn-muted me-2" style="border: 1px black solid;">Travel</a>
+                <a class="btn btn-muted" style="border: 1px black solid;">Lifestyle</a>
+              </div>
+              <div class="mt-3">
+                <a class="" style="text-decoration: none;">
+                  <h5 class="text-black">Creative Outdoors Ads</h5>
+                </a>
+              </div>
+              <div>
+                <p>
+                  Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="text-white" style=" margin-top: 100px;background:#04091e;">
+    <div class="footer-top mt-5">
+      <div class="container " style="padding: 50px 50px;">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 ">
+            <div>
+              <h4 class="text-white"> About Agency </h4>
+              <p>
+                The world has become so fast paced that people don’t want to stand by reading a page of information,
+                they would much rather look at a presentation and understand the message. It has come to a point
+              </p>
+            </div>
+            <div class="d-flex ">
+              <p class="me-3">Terms of Use</p>
+              <div>
+                <P>Privacy Policy</P>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col md-12 ">
+            <div class="">
+              <div class="h5" style="margin-left: 35px;">Useful Links</div>
+              <ul class="" style="list-style: none;">
+                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Sitemap</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Faqs</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-12 ">
+            <div>
+              <h5>Newsletter</h5>
+              <div class="d-flex ">
+                <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="col-md-4">
+                  <div class="d-flex ">
+                    <input type="email" placeholder="Enter Email" style="background-color: transparent;"
+                      class="me-1 email">
+                    <div class="icon-email">
+                      <a><i class="ri-send-plane-fill" style="font-size:25px;"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row g-4 justify-content-between mt-1">
+          <div class="text-center col-md-6">
+            <p class="mb-0">All rights reserved. © Designed by Adeniyi Oluibukun.</p>
+          </div>
+          <div class="d-flex mt-4 align-items-center col-md-6">
+            <h6 class="me-4 mt-1" style="margin-left: 35px;">Follow Us</h6>
+            <div>
+              <a href="#" style="text-decoration: none;"><i class="ri-twitter-fill" style="font-size: 20px;"></i></a>
+              <a href="#" style="text-decoration: none;"><i class="ri-instagram-fill" style="font-size: 20px;"></i></a>
+              <a href="#" style="text-decoration: none;"><i class="ri-facebook-fill" style="font-size: 20px;"></i></a>
+              <a href="#" style="text-decoration: none;"><i class="ri-github-fill" style="font-size: 20px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
